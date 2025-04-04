@@ -18,7 +18,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
+      {/* <p className="mb-3">
         After graduating with a degree in{" "}
         <span className="font-medium">Accounting</span>, I decided to pursue my
         passion for programming. I enrolled in a coding bootcamp and learned{" "}
@@ -43,6 +43,42 @@ export default function About() {
         learning about{" "}
         <span className="font-medium">history and philosophy</span>. I'm also
         learning how to play the guitar.
+      </p> */}
+      <p className="mb-3">
+        As an <span className="font-medium">Electrical and Biomedical Engineer</span> 
+        with over 10 years of experience, I specialize in hardware and firmware design,
+        embedded systems, and digital signal processing. My work spans academia and industry,
+        with a strong focus on developing life-improving technologies and wearable bioelectronics. 
+        I am passionate about designing user-centric products, integrating innovative hardware solutions with real-time embedded systems.
+        Throughout my career, I've led product development teams, designed PCBs, and navigated technological risks, ensuring that products are both functional and reliable.
+      </p>
+      
+      <p className="mb-3">
+        I graduated from the <span className="font-medium">University of British Columbia (UBC)</span> in 2024 with a <span className="font-medium">Ph.D. in 
+        Biomedical Engineering</span>, where I designed and tested a smart ureteral stent for monitoring kidney health. 
+        This project involved developing an <span className="font-medium">RF-MEMS antenna</span> on the stent to prevent hydronephrosis and enable wireless pressure 
+        measurement inside the kidney. My academic journey was driven by a desire to create impactful medical devices that improve patient care and monitoring.
+      </p>
+
+      <p className="mb-3">
+        I’ve had the privilege of working on several impactful projects, 
+        including a <span className="font-medium">smart glove</span> and <span className="font-medium">knee brace</span> with integrated 
+        sensors for health monitoring, as well as a wearable device for pregnant individuals to track baby kicks. 
+        My work with the <span className="font-medium">Wearable Bioelectronics Research Group</span> allowed me to explore 
+        cutting-edge applications of <span className="font-medium">body area networks</span> in improving health outcomes.
+      </p>
+
+      <p className="mb-3">
+        Alongside my technical expertise, I am deeply committed to education and mentoring. 
+        I have spent significant time teaching and guiding future engineers, instilling in them a passion for innovation and interdisciplinary collaboration. 
+        I believe in experiential learning and fostering a practical understanding of complex systems.
+      </p>
+
+      <p>
+        I am always looking for new opportunities to apply my skills to real-world challenges and 
+        continue to grow as both an engineer and educator. When I’m not working on projects, 
+        I enjoy exploring new technologies, reading about the latest advancements in biomedical engineering, 
+        and spending time outdoors.
       </p>
     </motion.section>
   );

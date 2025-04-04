@@ -1,0 +1,64 @@
+
+
+
+
+Remove-Item -Recurse -Force node_modules
+Remove-Item -Force package-lock.json
+npm cache clean --force
+npm install react@18.2.0 react-dom@18.2.0
+npm install
+npm install --legacy-peer-deps
+
+
+
+1- Start the development server
+npm run dev
+
+2- Check for additional issues
+npm audit fix --force
+
+
+3- Final verification
+npm install --save-exact
+
+
+Now the website can be seen on the localhost
+
+
+
+to make it available on vercel
+
+npm install -g vercel
+
+npm audit fix --force
+
+
+vercel login
+vercel
+"Set up and deploy?" → Type y and press Enter.
+"Which scope do you want to deploy to?" → Select your account.
+"Link to existing project?" → Choose "Create a new project" if you haven’t linked it yet.
+"Which framework are you using?" → Choose Next.js.
+"Deploy now?" → Type y and press Enter.
+vercel --prod
+
+
+
+Now make changes and then
+
+# 1. Make sure development server is running and everything works locally
+npm run dev
+
+# 2. If using Git, commit and push changes (if applicable)
+git add .
+git commit -m "Update layout project"
+git push origin main  # or your specific branch
+
+# 3. Deploy changes to Vercel
+vercel --prod
+Sometimes, Vercel might cache some old builds. If you run into this issue, you can force a fresh deploy by clearing the Vercel cache:
+vercel --prod --force
+
+
+
+

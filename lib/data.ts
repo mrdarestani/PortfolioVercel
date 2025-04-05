@@ -35,73 +35,169 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "B.Sc, Electrical Engineering",
+    location: "Tehran, Iran",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Completed a 4-year undergraduate program with a strong foundation in electronics, circuit design, and project development. Gained hands-on experience with fundamental measurement tools and instrumentation, and developed the ability to design and implement engineering solutions from concept to prototype.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2010 - 2013",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "M.Sc, Electrical Engineering",
+    location: "Tehran, Iran",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Face recognition using machine learning and countourlet algorithms.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2010 - 2013",
+  },
+  {
+    title: "Electronic Engineer & Project Manager",
+    location: "Tehran, Iran",
+    description:
+      "I worked as an electronics engineer and project manager for 5+ years across several companies. I specialized in embedded systems with ARM-based microcontrollers, designed PCBs, and worked with TFT displays, sensors, and RTOS environments. I also gained hands-on experience in debugging firmware/hardware, system testing, and IoT product development.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2013 - 2018",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "PhD Biomedical Engineering",
+    location: "Vancouver, Canada",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "As a PhD researcher at UBC, I developed a wireless smart ureteral stent using microfabrication. I managed lab operations, maintained equipment, and published research on biomedical sensing technologies.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2018 - 2024",
+  },
+  {
+    title: "Hardware Lead – Hardware/Firmware Developer @ Texavie",
+    location: "Vancouver, Canada",
+    description:
+      "At Texavie, I led the hardware and firmware development of smart wearables, including a glove and knee brace. I designed PCBs, wrote embedded firmware for Bluetooth-enabled microcontrollers, and ensured regulatory compliance.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2020 - 2023",
+  },
+  {
+    title: "System Engineer – Hardware/Firmware Developer @ Fluttercare",
+    location: "Vancouver, Canada",
+    description:
+      "At Fluttercare, I lead the design of a smart wearable for infant health monitoring. I develop embedded firmware and custom PCBs, manage the hardware team, and ensure product compliance and performance.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - Now",
+  },
+  {
+    title: "Faculty Lecturer @ BCIT",
+    location: "Vancouver, Canada",
+    description:
+      "I teach electronics and digital circuit courses to Biomedical Engineering Technology students at BCIT. My role includes guiding students through hands-on labs, ensuring lab safety, and contributing to course development.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024 - Now",
+  },
+  {
+    title: "Hardware/Firmware Engineer",
+    location: "Vancouver, Canada",
+    description:
+      "I'm currently working as a hardware/firmware engineer focused on embedded systems, smart wearables, and wireless medical devices. I design PCBs, write embedded firmware (C/C++), and lead product development across multiple stages. I'm open to impactful opportunities in health tech and embedded innovation.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2025",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "BellyBand Kick Counter",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Developed a non-invasive wearable for monitoring fetal movements, offering objective, real-time insights for prenatal care. Uses abdominal sensors to track frequency and intensity of fetal kicks, enhancing maternal bonding and clinical decision-making.",
+    tags: ["Embedded Systems", "Wearables", "Sensors", "Healthcare", "STM32"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "KneeBrace",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Designed a wearable knee brace integrating IMU and strain sensors for lower body pose estimation. Leveraged machine learning with motion capture data for 3D human modeling, enabling advanced motion tracking for healthcare and fitness applications.",
+    tags: ["Machine Learning", "Wearables", "IMU", "Human Pose Estimation"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "SmartGlove",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Engineered a stretchable, washable glove with helical sensor yarns and IMUs for precise hand tracking. Enabled real-time, wireless monitoring for applications in HCI, VR/AR, robotics, and rehabilitation.",
+    tags: ["Wearables", "Sensors", "Embedded Systems", "IMU", "Healthcare"],
     imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Smart Ureteral Stent",
+    description:
+      "Developed a wireless pressure-sensing ureteral stent with an RF antenna and micro pressure sensor. Enabled early detection of hydronephrosis through resonance frequency shifts, validated in in-vitro and ex-vivo models.",
+    tags: ["Biomedical", "RF Sensing", "Wireless", "Microfabrication", "Medical Device"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Smart Ureteral Stent",
+    description:
+      "Developed a wireless pressure-sensing ureteral stent with an RF antenna and micro pressure sensor. Enabled early detection of hydronephrosis through resonance frequency shifts, validated in in-vitro and ex-vivo models.",
+    tags: ["Biomedical", "RF Sensing", "Wireless", "Microfabrication", "Medical Device"],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: "LipLoft",
+    description:
+      "Created an assistive device enabling quadriplegic individuals to control drones using head motion and breath. Designed for 6 DOF drone control via Bluetooth using LipSync technology.",
+    tags: ["Assistive Tech", "Embedded Systems", "Bluetooth", "Accessibility"],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: "Infant Incubator",
+    description:
+      "Built a smart infant incubator with STM32F103 and LPC1788 for monitoring and regulating skin temperature and humidity. Featured alarms for faults and environmental anomalies, enhancing neonatal care.",
+    tags: ["STM32", "Embedded Systems", "Medical Devices", "Sensors"],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: "MP3 Player",
+    description:
+      "Designed a standalone MP3 player using STM32F103. Handled decompression and stereo DAC output without external ICs, enabling low-cost audio playback from MMC via SPI.",
+    tags: ["STM32", "Audio", "SPI", "Embedded Systems", "MP3"],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: "Ad-HOC Network",
+    description:
+      "Built a decentralized wireless ad hoc network with 10 nodes using TDMA and FDMA for secure, full-duplex data/voice transmission. Implemented dynamic routing, CODEC compression, and fast frequency hopping.",
+    tags: ["Wireless", "TDMA", "FDMA", "Network Security", "Embedded Systems"],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: "WiFi Controller (IoT)",
+    description:
+      "Developed a secure WiFi-based controller for home automation. Enabled multi-node device control via Android app with timer, learning, and scheduling features.",
+    tags: ["IoT", "WiFi", "Android App", "Home Automation"],
+    imageUrl: rmtdevImg,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
+  "C/C++",
   "Python",
-  "Django",
-  "Framer Motion",
+  "MATLAB",
+  "C#",
+  "ARM Cortex-M",
+  "VHDL",
+  "Assembly",
+  "KiCad",
+  "Altium",
+  "SolidWorks",
+  "Onshape",
+  "MS Office",
+  "Git",
+  "Jira",
+  "Trello",
+  "RTOS",
+  "Real-time Data Processing",
+  "Firmware Optimization",
+  "PCB Designing",
+  "Analog Circuit Design",
+  "Internet of Things (IoT)",
+  "Sensors",
+  "Wireless Communication",
+  "Wi-Fi",
+  "BLE",
+  "Zigbee",
 ] as const;

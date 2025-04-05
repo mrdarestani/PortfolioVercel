@@ -5,6 +5,10 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import FlutterImg from "@/public/Flutter.jpg";
+import TexavieKneeImg from "@/public/TexavieKnee.jpg";
+import TexavieGloveImg from "@/public/TexavieGlove.jpg";
+
 
 export const links = [
   {
@@ -106,28 +110,21 @@ export const projectsData = [
     description:
       "Developed a non-invasive wearable for monitoring fetal movements, offering objective, real-time insights for prenatal care. Uses abdominal sensors to track frequency and intensity of fetal kicks, enhancing maternal bonding and clinical decision-making.",
     tags: ["Embedded Systems", "Wearables", "Sensors", "Healthcare", "STM32"],
-    imageUrl: corpcommentImg,
+    imageUrl: FlutterImg,
   },
   {
     title: "KneeBrace",
     description:
       "Designed a wearable knee brace integrating IMU and strain sensors for lower body pose estimation. Leveraged machine learning with motion capture data for 3D human modeling, enabling advanced motion tracking for healthcare and fitness applications.",
     tags: ["Machine Learning", "Wearables", "IMU", "Human Pose Estimation"],
-    imageUrl: rmtdevImg,
+    imageUrl: TexavieKneeImg,
   },
   {
     title: "SmartGlove",
     description:
       "Engineered a stretchable, washable glove with helical sensor yarns and IMUs for precise hand tracking. Enabled real-time, wireless monitoring for applications in HCI, VR/AR, robotics, and rehabilitation.",
     tags: ["Wearables", "Sensors", "Embedded Systems", "IMU", "Healthcare"],
-    imageUrl: wordanalyticsImg,
-  },
-  {
-    title: "Smart Ureteral Stent",
-    description:
-      "Developed a wireless pressure-sensing ureteral stent with an RF antenna and micro pressure sensor. Enabled early detection of hydronephrosis through resonance frequency shifts, validated in in-vitro and ex-vivo models.",
-    tags: ["Biomedical", "RF Sensing", "Wireless", "Microfabrication", "Medical Device"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: TexavieGloveImg,
   },
   {
     title: "Smart Ureteral Stent",

@@ -44,7 +44,7 @@ export default function About() {
         <span className="font-medium">history and philosophy</span>. I'm also
         learning how to play the guitar.
       </p> */}
-      <p className="mb-3">
+      {/* <p className="mb-3">
         As an <span className="font-medium">Electrical and Biomedical Engineer</span> 
         with over 10 years of experience, I specialize in hardware and firmware design,
         embedded systems, and digital signal processing. My work spans academia and industry,
@@ -79,6 +79,26 @@ export default function About() {
         continue to grow as both an engineer and educator. When I’m not working on projects, 
         I enjoy exploring new technologies, reading about the latest advancements in biomedical engineering, 
         and spending time outdoors.
+      </p> */}
+      <p className="mb-3">
+        As an <span className="font-medium">Electrical and Biomedical Engineer</span> with over 10 years of hands-on experience, 
+        I specialize in <span className="font-medium">hardware and firmware development</span>, 
+        <span className="font-medium">embedded systems</span>, and <span className="font-medium">digital signal processing</span>. 
+        I’ve led product development teams from concept to launch—designing PCBs, integrating real-time systems, 
+        and managing technical risks to deliver reliable, user-focused solutions. My passion lies in creating 
+        <span className="font-medium">life-improving technologies</span>, particularly in wearable bioelectronics that 
+        bridge innovation with practical healthcare applications.
+      </p>
+
+      <p className="mb-3">
+        I earned my <span className="font-medium">Ph.D. in Biomedical Engineering</span> from the 
+        <span className="font-medium"> University of British Columbia (UBC)</span>, where I developed a 
+        <span className="font-medium">wireless smart ureteral stent</span> using RF-MEMS technology for early detection 
+        of kidney obstruction. My research reflects a commitment to impactful medical innovation and opened doors 
+        to broader applications in <span className="font-medium">body area networks</span> and wearable health systems— 
+        including smart gloves, knee braces, and prenatal monitors. I'm equally passionate about 
+        <span className="font-medium">mentoring future engineers</span>, emphasizing experiential learning and 
+        interdisciplinary collaboration in education.
       </p>
     </motion.section>
   );

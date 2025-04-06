@@ -51,7 +51,7 @@ npm run dev
 npm run build
 # 2. If using Git, commit and push changes (if applicable)
 git add .
-git commit -m "Update layout project"
+git commit -m "Add images for projects"
 git push origin main  # or your specific branch
 
 # 3. Deploy changes to Vercel

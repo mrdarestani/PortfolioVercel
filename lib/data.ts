@@ -8,6 +8,12 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 import FlutterImg from "@/public/Flutter.jpg";
 import TexavieKneeImg from "@/public/TexavieKnee.jpg";
 import TexavieGloveImg from "@/public/TexavieGlove.jpg";
+import LipLoftImg from "@/public/LipLoft.jpg";
+import InFantIncubatorImg from "@/public/InFantIncubator.jpg";
+import WiFiControllerImg from "@/public/WiFiController.jpg";
+import SmartStentImg from "@/public/SmartStent.jpg";
+import MP3PlayerImg from "@/public/MP3Player.jpg";
+import AdHocImg from "@/public/AdHoc.jpg";
 
 
 export const links = [
@@ -131,42 +137,42 @@ export const projectsData = [
     description:
       "Developed a wireless pressure-sensing ureteral stent with an RF antenna and micro pressure sensor. Enabled early detection of hydronephrosis through resonance frequency shifts, validated in in-vitro and ex-vivo models.",
     tags: ["Biomedical", "RF Sensing", "Wireless", "Microfabrication", "Medical Device"],
-    imageUrl: rmtdevImg,
+    imageUrl: SmartStentImg,
   },
   {
     title: "LipLoft",
     description:
       "Created an assistive device enabling quadriplegic individuals to control drones using head motion and breath. Designed for 6 DOF drone control via Bluetooth using LipSync technology.",
     tags: ["Assistive Tech", "Embedded Systems", "Bluetooth", "Accessibility"],
-    imageUrl: rmtdevImg,
+    imageUrl: LipLoftImg,
   },
   {
     title: "Infant Incubator",
     description:
       "Built a smart infant incubator with STM32F103 and LPC1788 for monitoring and regulating skin temperature and humidity. Featured alarms for faults and environmental anomalies, enhancing neonatal care.",
     tags: ["STM32", "Embedded Systems", "Medical Devices", "Sensors"],
-    imageUrl: rmtdevImg,
+    imageUrl: InFantIncubatorImg,
   },
   {
     title: "MP3 Player",
     description:
       "Designed a standalone MP3 player using STM32F103. Handled decompression and stereo DAC output without external ICs, enabling low-cost audio playback from MMC via SPI.",
     tags: ["STM32", "Audio", "SPI", "Embedded Systems", "MP3"],
-    imageUrl: rmtdevImg,
+    imageUrl: MP3PlayerImg,
   },
   {
     title: "Ad-HOC Network",
     description:
       "Built a decentralized wireless ad hoc network with 10 nodes using TDMA and FDMA for secure, full-duplex data/voice transmission. Implemented dynamic routing, CODEC compression, and fast frequency hopping.",
     tags: ["Wireless", "TDMA", "FDMA", "Network Security", "Embedded Systems"],
-    imageUrl: rmtdevImg,
+    imageUrl: AdHocImg,
   },
   {
     title: "WiFi Controller (IoT)",
     description:
       "Developed a secure WiFi-based controller for home automation. Enabled multi-node device control via Android app with timer, learning, and scheduling features.",
     tags: ["IoT", "WiFi", "Android App", "Home Automation"],
-    imageUrl: rmtdevImg,
+    imageUrl: WiFiControllerImg,
   },
 ] as const;
 

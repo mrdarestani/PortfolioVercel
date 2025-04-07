@@ -6,8 +6,8 @@ Remove-Item -Recurse -Force node_modules
 Remove-Item -Force package-lock.json
 npm cache clean --force
 npm install react@18.2.0 react-dom@18.2.0
-npm install
-npm install --legacy-peer-deps
+---npm install
+---npm install --legacy-peer-deps
 
 
 
@@ -51,7 +51,7 @@ npm run dev
 npm run build
 # 2. If using Git, commit and push changes (if applicable)
 git add .
-git commit -m "Add images for projects"
+git commit -m "Add New notes"
 git push origin main  # or your specific branch
 
 # 3. Deploy changes to Vercel

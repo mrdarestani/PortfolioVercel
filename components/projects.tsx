@@ -22,3 +22,6 @@ export default function Projects() {
     </section>
   );
 }
+
+//<Project {...project} />
+//<Project {...project} slug={project.slug} />

@@ -1,6 +1,39 @@
-[![Watch tutorial here](https://img.youtube.com/vi/sUKptmUVIBM/0.jpg)](https://youtu.be/sUKptmUVIBM)
 
-# [Watch video here](https://youtu.be/sUKptmUVIBM)
+# [my website is mrdarestani.com](https://mrdarestani.com)
+
+
+# 1. Make sure development server is running and everything works locally
+- Remove-Item -Recurse -Force node_modules  
+- Remove-Item -Force package-lock.json  
+- npm cache clean --force  
+- npm install react@18.2.0 react-dom@18.2.0  
+- ---npm install  
+- ---npm install --legacy-peer-deps  
+- 1- Start the development server  
+--  npm run dev  
+--  npm run build 
+- 2- Check for additional issues  
+-- npm audit fix --force   
+
+
+# 2. If using Git, commit and push changes (if applicable)
+- git add .
+- git commit -m "Add All images Projects"
+- git push origin main  # or your specific branch
+
+# 3. Deploy changes to Vercel
+- vercel login  
+- vercel  
+- "Set up and deploy?" → Type y and press Enter.  
+- "Which scope do you want to deploy to?" → Select your account.  
+- "Link to existing project?" → Choose "Create a new project" if you haven’t linked it yet.  
+- "Which framework are you using?" → Choose Next.js.  
+- "Deploy now?" → Type y and press Enter.  
+- vercel --prod  
+
+- Sometimes, Vercel might cache some old builds. If you run into this issue, you can force a fresh deploy by clearing the Vercel cache:
+- vercel --prod --force
+
 
 ## What you will learn
 
@@ -17,12 +50,6 @@
 - Fresh, modern UI design
 - Light & Dark mode
 - Responsive website
-
-## Important
-
-If you want to be a professional developer, you have to know the fundamentals like JavaScript and CSS really well. I highly recommend you go through my [Professional JavaScript](https://bytegrad.com/courses/professional-javascript) and [Professional CSS](https://bytegrad.com/courses/professional-css) courses.
-
-I'm close to releasing a complete React & Next.js course. Get on the email list to receive early-bird pricing: [link](https://email.bytegrad.com/).
 
 ## Setup
 

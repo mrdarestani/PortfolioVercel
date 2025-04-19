@@ -117,6 +117,7 @@ export const projectsData = [
       "Developed a non-invasive wearable for monitoring fetal movements, offering objective, real-time insights for prenatal care. Uses abdominal sensors to track frequency and intensity of fetal kicks, enhancing maternal bonding and clinical decision-making.",
     tags: ["Embedded Systems", "Wearables", "Sensors", "Healthcare", "STM32"],
     imageUrl: FlutterImg,
+    slug: "bellyband-kick-counter",// <-- ADD THIS
   },
   {
     title: "KneeBrace",
@@ -124,6 +125,7 @@ export const projectsData = [
       "Designed a wearable knee brace integrating IMU and strain sensors for lower body pose estimation. Leveraged machine learning with motion capture data for 3D human modeling, enabling advanced motion tracking for healthcare and fitness applications.",
     tags: ["Machine Learning", "Wearables", "IMU", "Human Pose Estimation"],
     imageUrl: TexavieKneeImg,
+    slug: "kneebrace",// <-- ADD THIS
   },
   {
     title: "SmartGlove",
@@ -131,6 +133,7 @@ export const projectsData = [
       "Engineered a stretchable, washable glove with helical sensor yarns and IMUs for precise hand tracking. Enabled real-time, wireless monitoring for applications in HCI, VR/AR, robotics, and rehabilitation.",
     tags: ["Wearables", "Sensors", "Embedded Systems", "IMU", "Healthcare"],
     imageUrl: TexavieGloveImg,
+    slug: "smartglove",// <-- ADD THIS
   },
   {
     title: "Smart Ureteral Stent",
@@ -138,6 +141,7 @@ export const projectsData = [
       "Developed a wireless pressure-sensing ureteral stent with an RF antenna and micro pressure sensor. Enabled early detection of hydronephrosis through resonance frequency shifts, validated in in-vitro and ex-vivo models.",
     tags: ["Biomedical", "RF Sensing", "Wireless", "Microfabrication", "Medical Device"],
     imageUrl: SmartStentImg,
+    slug: "smart-ureteral-stent",// <-- ADD THIS
   },
   {
     title: "LipLoft",
@@ -145,6 +149,7 @@ export const projectsData = [
       "Created an assistive device enabling quadriplegic individuals to control drones using head motion and breath. Designed for 6 DOF drone control via Bluetooth using LipSync technology.",
     tags: ["Assistive Tech", "Embedded Systems", "Bluetooth", "Accessibility"],
     imageUrl: LipLoftImg,
+    slug: "liploft",// <-- ADD THIS
   },
   {
     title: "Infant Incubator",
@@ -152,6 +157,7 @@ export const projectsData = [
       "Built a smart infant incubator with STM32F103 and LPC1788 for monitoring and regulating skin temperature and humidity. Featured alarms for faults and environmental anomalies, enhancing neonatal care.",
     tags: ["STM32", "Embedded Systems", "Medical Devices", "Sensors"],
     imageUrl: InFantIncubatorImg,
+    slug: "infant-incubator",// <-- ADD THIS
   },
   {
     title: "MP3 Player",
@@ -159,6 +165,7 @@ export const projectsData = [
       "Designed a standalone MP3 player using STM32F103. Handled decompression and stereo DAC output without external ICs, enabling low-cost audio playback from MMC via SPI.",
     tags: ["STM32", "Audio", "SPI", "Embedded Systems", "MP3"],
     imageUrl: MP3PlayerImg,
+    slug: "mp3-player",// <-- ADD THIS
   },
   {
     title: "Ad-HOC Network",
@@ -166,6 +173,7 @@ export const projectsData = [
       "Built a decentralized wireless ad hoc network with 10 nodes using TDMA and FDMA for secure, full-duplex data/voice transmission. Implemented dynamic routing, CODEC compression, and fast frequency hopping.",
     tags: ["Wireless", "TDMA", "FDMA", "Network Security", "Embedded Systems"],
     imageUrl: AdHocImg,
+    slug: "ad-hoc-network",// <-- ADD THIS
   },
   {
     title: "WiFi Controller (IoT)",
@@ -173,6 +181,7 @@ export const projectsData = [
       "Developed a secure WiFi-based controller for home automation. Enabled multi-node device control via Android app with timer, learning, and scheduling features.",
     tags: ["IoT", "WiFi", "Android App", "Home Automation"],
     imageUrl: WiFiControllerImg,
+    slug: "wifi-controller",// <-- ADD THIS
   },
 ] as const;
 

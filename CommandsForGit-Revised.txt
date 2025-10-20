@@ -1,0 +1,91 @@
+
+
+
+
+Remove-Item -Recurse -Force node_modules 
+Remove-Item -Force package-lock.json
+npm cache clean --force
+npm install react@18.2.0 react-dom@18.2.0 => this will provide some warn but at the end it found 0 vulnerabilities
+
+------
+PS F:\webDesign1\Git\PortfolioVercel> npm install react@18.2.0 react-dom@18.2.0
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.1.7: Glob versions prior to v9 are no longer supported
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated @humanwhocodes/config-array@0.11.14: Use @eslint/config-array instead
+npm warn deprecated eslint@8.43.0: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 453 packages, and audited 454 packages in 3m
+
+163 packages are looking for funding
+  run `npm fund` for details
+------
+npm install react-hot-toast
+
+
+PS F:\webDesign1\Git\PortfolioVercel> npm install react-hot-toast
+
+up to date, audited 454 packages in 2s
+
+163 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+-----------------------
+---npm install
+---npm install --legacy-peer-deps
+
+
+
+1- Start the development server
+npm run dev
+
+2- Check for additional issues
+npm audit fix --force
+
+
+3- Final verification
+npm install --save-exact
+
+
+Now the website can be seen on the localhost
+
+
+
+to make it available on vercel
+
+npm install -g vercel
+
+npm audit fix --force
+
+
+vercel login
+vercel
+"Set up and deploy?" → Type y and press Enter.
+"Which scope do you want to deploy to?" → Select your account.
+"Link to existing project?" → Choose "Create a new project" if you haven’t linked it yet.
+"Which framework are you using?" → Choose Next.js.
+"Deploy now?" → Type y and press Enter.
+vercel --prod
+
+
+
+Now make changes and then
+
+# 1. Make sure development server is running and everything works locally
+npm run dev
+npm run build
+# 2. If using Git, commit and push changes (if applicable)
+git add .
+git commit -m "Add All images Projects"
+git push origin main  # or your specific branch
+
+# 3. Deploy changes to Vercel
+vercel --prod
+Sometimes, Vercel might cache some old builds. If you run into this issue, you can force a fresh deploy by clearing the Vercel cache:
+vercel --prod --force
+
+
+
+

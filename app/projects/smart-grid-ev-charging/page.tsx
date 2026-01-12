@@ -1,37 +1,26 @@
-// import React from 'react';
-
-// export default function AdHocNetworkPage() {
-//   return (
-//     <div className="p-10">
-//       <h1 className="text-3xl font-bold mb-4">Ad-Hoc Network</h1>
-//       <p>A system enabling peer-to-peer communication using low-power wireless modules.</p>
-//     </div>
-//   );
-// }
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ProjectSkills from "@/components/project-skills";
-import { adHocSkillsData } from "@/lib/project-skills";
+import { smartGridSkillsData } from "@/lib/project-skills";
 
 // Import your project images here
-import adHocImg1 from "@/public/projects/ad-hoc-1.JPG";
-import adHocImg2 from "@/public/projects/ad-hoc-2.JPG";
+import smartGridImg1 from "@/public/projects/smart-grid-1.JPG";
+import smartGridImg2 from "@/public/projects/smart-grid-2.JPG";
 
-
-export default function AdHocNetworkPage() {
+export default function SmartGridEVPage() {
   return (
-    //<div className="p-10 max-w-5xl mx-auto space-y-16">
     <div className="min-h-screen bg-transparent p-10 max-w-5xl mx-auto space-y-16">
+      
       {/* Description Section */}
       <section id="description" className="scroll-mt-28">
-        <h1 className="text-3xl font-bold mb-4">Ad-Hoc Network</h1>
+        <h1 className="text-3xl font-bold mb-4">Smart Grid & EV Charging</h1>
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-          The Ad-Hoc Network project involves creating a decentralized peer-to-peer communication system
-          using low-power wireless modules. It integrates TDMA and FDMA for full-duplex voice and data
-          transmission, featuring dynamic routing, secure data transfer, and resilience against hacking
-          attempts. Handover capabilities allow data to relay through multiple nodes, extending the
-          wireless range. This project demonstrates a robust approach to secure, distributed networking.
+          This project involves developing firmware and simulation tools for smart grid and EV charging systems.
+          It enables secure and efficient communication between EV chargers and central servers using Broadband Power Line (BPL), 
+          Power Line Communication (PLC), Modbus, and 7E protocols. I designed JSON-based data models for OCPP messaging, implemented 
+          PV inverter connectivity, and built a web-based simulation environment to validate interoperability and energy management.
+          The project demonstrates scalable smart city energy solutions with reliable device communication and renewable energy integration.
         </p>
       </section>
 
@@ -41,27 +30,27 @@ export default function AdHocNetworkPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="rounded-lg overflow-hidden shadow-lg">
             <Image
-              src={adHocImg1}
-              alt="Ad-Hoc Network diagram 1"
+              src={smartGridImg1}
+              alt="Smart Grid & EV Charger diagram 1"
               quality={95}
               className="w-full h-full object-cover"
             />
           </div>
           <div className="rounded-lg overflow-hidden shadow-lg">
             <Image
-              src={adHocImg2}
-              alt="Ad-Hoc Network diagram 2"
+              src={smartGridImg2}
+              alt="Smart Grid & EV Charger diagram 2"
               quality={95}
               className="w-full h-full object-cover"
             />
           </div>
         </div>
       </section>
-      
+
       {/* Skills Section */}
       <ProjectSkills
-        title="Ad-Hoc Network – Skills & Technologies"
-        skills={adHocSkillsData}
+        title="Smart Grid & EV Charging – Skills & Technologies"
+        skills={smartGridSkillsData}
       />
 
       {/* Back button */}
@@ -75,7 +64,6 @@ export default function AdHocNetworkPage() {
           ← Back to main page
         </Link>
       </section>
-
 
     </div>
   );

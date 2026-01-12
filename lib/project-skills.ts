@@ -16,3 +16,21 @@ export const adHocSkillsData = [
   "Analog Circuit Design",
   "Git",
 ] as const;
+export const smartGridSkillsData = [
+  "C/C++",
+  "Python",
+  "JSON",
+  "Linux",
+  "Embedded Systems",
+  "OCPP",
+  "BPL",
+  "PLC",
+  "7E Protocol",
+  "Modbus",
+  "Firmware Simulation",
+  "Web Simulation",
+  "Networking",
+  "Multithreading",
+  "GDB/JTAG Debugging",
+  "Renewable Energy Integration",
+] as const;

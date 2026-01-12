@@ -14,6 +14,7 @@ import WiFiControllerImg from "@/public/WiFiController.jpg";
 import SmartStentImg from "@/public/SmartStent.jpg";
 import MP3PlayerImg from "@/public/MP3Player.jpg";
 import AdHocImg from "@/public/AdHoc.jpg";
+import SmartGridImg from "@/public/SmartGrid.jpg";
 
 
 export const links = [
@@ -77,7 +78,7 @@ export const experiencesData = [
     date: "2018 - 2024",
   },
   {
-    title: "Hardware Lead – Hardware/Firmware Developer @ Texavie",
+    title: "Hardware Lead - Hardware/Firmware Developer @ Texavie",
     location: "Vancouver, Canada",
     description:
       "At Texavie, I led the hardware and firmware development of smart wearables, including a glove and knee brace. I designed PCBs, wrote embedded firmware for Bluetooth-enabled microcontrollers, and ensured regulatory compliance.",
@@ -85,28 +86,36 @@ export const experiencesData = [
     date: "2020 - 2023",
   },
   {
-    title: "System Engineer – Hardware/Firmware Developer @ Fluttercare",
+    title: "System Engineer - Hardware/Firmware Developer @ Fluttercare",
     location: "Vancouver, Canada",
     description:
       "At Fluttercare, I lead the design of a smart wearable for infant health monitoring. I develop embedded firmware and custom PCBs, manage the hardware team, and ensure product compliance and performance.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - Now",
+    date: "2023 - 2025",
   },
   {
     title: "Faculty Lecturer @ BCIT",
     location: "Vancouver, Canada",
     description:
-      "I teach electronics and digital circuit courses to Biomedical Engineering Technology students at BCIT. My role includes guiding students through hands-on labs, ensuring lab safety, and contributing to course development.",
+      "I was an instructor for electronics and digital circuit courses in Biomedical Engineering Technology department at BCIT. My role was included guiding students through hands-on labs, ensuring lab safety, and contributing to course development.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024 - Now",
+    date: "2024 - 2025",
   },
   {
-    title: "Hardware/Firmware Engineer",
+    title: "Senior Firmware Engineer @ Corinex",
+    location: "Vancouver, Canada",
+    description:
+      "At Corinex, I worked on firmware and simulation platforms for smart grid and EV charging systems, enabling reliable communication between energy devices and central management systems using industry-standard power line and networking technologies.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2025 - Now",
+  },
+  {
+    title: "Hardware/Firmware Engineer @ Freelance",
     location: "Vancouver, Canada",
     description:
       "I'm currently working as a hardware/firmware engineer focused on embedded systems, smart wearables, and wireless medical devices. I design PCBs, write embedded firmware (C/C++), and lead product development across multiple stages. I'm open to impactful opportunities in health tech and embedded innovation.",
     icon: React.createElement(FaReact),
-    date: "2025",
+    date: "2025 - Now",
   },
 ] as const;
 
@@ -183,6 +192,14 @@ export const projectsData = [
     imageUrl: WiFiControllerImg,
     slug: "wifi-controller",// <-- ADD THIS
   },
+  {
+  title: "Smart Grid & EV Charging",
+  description:
+    "Developed firmware and simulation tools for smart grid and EV charging systems, enabling seamless communication between EV chargers and central servers.",
+  tags: ["Smart Grid", "EV Charging", "PLC", "Embedded Systems", "Energy Management","BPL"],
+  imageUrl: SmartGridImg, // <-- replace with your image import
+  slug: "smart-grid-ev-charging", // <-- ADD THIS
+  },
 ] as const;
 
 export const skillsData = [
@@ -191,6 +208,7 @@ export const skillsData = [
   "MATLAB",
   "C#",
   "ARM Cortex-M",
+  "Linux",
   "VHDL",
   "Assembly",
   "KiCad",

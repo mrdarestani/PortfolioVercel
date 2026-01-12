@@ -10,10 +10,14 @@
 // }
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import ProjectSkills from "@/components/project-skills";
+import { adHocSkillsData } from "@/lib/project-skills";
 
 // Import your project images here
 import adHocImg1 from "@/public/projects/ad-hoc-1.JPG";
 import adHocImg2 from "@/public/projects/ad-hoc-2.JPG";
+
 
 export default function AdHocNetworkPage() {
   return (
@@ -53,6 +57,26 @@ export default function AdHocNetworkPage() {
           </div>
         </div>
       </section>
+      
+      {/* Skills Section */}
+      <ProjectSkills
+        title="Ad-Hoc Network – Skills & Technologies"
+        skills={adHocSkillsData}
+      />
+
+      {/* Back button */}
+      <section id="back" className="scroll-mt-28 flex justify-center">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 rounded-full border border-gray-300 px-6 py-2 text-sm font-medium
+                    text-gray-800 transition hover:bg-gray-100
+                    dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800"
+        >
+          ← Back to main page
+        </Link>
+      </section>
+
+
     </div>
   );
 }

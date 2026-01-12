@@ -1,0 +1,18 @@
+export const adHocSkillsData = [
+  "C/C++",
+  "Python",
+  "MATLAB",
+  "ARM Cortex-M",
+  "RTOS",
+  "Firmware Optimization",
+  "Real-time Data Processing",
+  "Wireless Communication",
+  "Wi-Fi",
+  "BLE",
+  "Zigbee",
+  "IoT",
+  "Sensors",
+  "PCB Design",
+  "Analog Circuit Design",
+  "Git",
+] as const;

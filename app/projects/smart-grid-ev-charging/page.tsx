@@ -5,8 +5,8 @@ import ProjectSkills from "@/components/project-skills";
 import { smartGridSkillsData } from "@/lib/project-skills";
 
 // Import your project images here
-import smartGridImg1 from "@/public/projects/smart-grid-1.JPG";
-import smartGridImg2 from "@/public/projects/smart-grid-2.JPG";
+import smartGridImg1 from "@/public/projects/smart-grid-1.jpg";
+import smartGridImg2 from "@/public/projects/smart-grid-2.jpg";
 
 export default function SmartGridEVPage() {
   return (

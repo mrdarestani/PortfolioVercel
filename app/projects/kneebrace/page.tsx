@@ -1,55 +1,75 @@
-// 'use client';  // Add this directive to make this a client-side component
-
-// import React from 'react';
-// import { useRouter } from 'next/navigation';
-
-// export default function KneebracePage() {
-//   const router = useRouter();
-
-//   const handleGoBack = () => {
-//     router.push('/'); // Navigate back to the main page
-//   };
-
-//   return (
-//     <div className="p-10">
-//       <h1 className="text-3xl font-bold mb-4">Knee Brace</h1>
-//       <p>A smart wearable knee brace that monitors joint movement and supports rehabilitation.</p>
-//       <button
-//         onClick={handleGoBack}
-//         className="mt-4 px-6 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700"
-//       >
-//         Back to Main Page
-//       </button>
-//     </div>
-//   );
-// }
-
-
-// app/projects/kneebrace/page.tsx
-
-"use client";
-
 import React from "react";
-import { useRouter } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
+import ProjectSkills from "@/components/project-skills";
+import { kneeBraceSkillsData } from "@/lib/project-skills";
 
-export default function KneebracePage() {
-  const router = useRouter();
-
+export default function KneeBracePage() {
   return (
-    <div>
-      <button
-        onClick={() => router.push("/")}
-        className="mb-6 px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition"
-      >
-        ← Back to main page
-      </button>
+    <div className="min-h-screen bg-transparent p-10 max-w-5xl mx-auto space-y-16">
 
-      <h1 className="text-3xl font-bold mb-4">Knee Brace Project</h1>
-      <p className="text-lg">
-        This page contains all the details about the Knee Brace project...
-      </p>
+      {/* ===== Description ===== */}
+      <section id="description" className="scroll-mt-28">
+        <h1 className="text-3xl font-bold mb-4">
+          Knee Brace Wearable Device
+        </h1>
+        <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+          This project involves the development of a wearable knee brace system
+          designed to measure knee joint angle and muscle activity during movement.
+          The device integrates joint angle sensing and electromyography (EMG)
+          signal acquisition to provide real-time biomechanical data. Embedded
+          firmware processes sensor signals and enables synchronized data capture
+          for gait analysis, rehabilitation monitoring, and performance assessment,
+          demonstrating the integration of wearable electronics, biomedical sensing,
+          and embedded systems.
+        </p>
+      </section>
 
-      {/* Add any new features or content you'd like here */}
+      {/* ===== Images ===== */}
+      <section id="photos" className="scroll-mt-28 space-y-8">
+        <h2 className="text-2xl font-semibold">Hardware & User Interface</h2>
+
+        {["Kneebrace1.jpg", "Kneebrace2.jpg"].map((img, i) => (
+          <Image
+            key={i}
+            src={`/projects/${img}`}
+            alt={`Infant incubator system view ${i + 1}`}
+            width={1600}
+            height={1000}
+            quality={100}
+            className="w-full rounded-2xl shadow-xl"
+          />
+        ))}
+      </section>
+
+      {/* ===== Video ===== */}
+      <section className="space-y-6">
+        <h2 className="text-2xl font-semibold">Measurement Demonstration</h2>
+        <video
+          src="/projects/Kneebrace1.mp4"
+          controls
+          className="w-full rounded-2xl shadow-xl"
+        />
+      </section>
+
+      {/* ===== Skills ===== */}
+      <ProjectSkills
+        title="Knee Brace Wearable - Skills & Technologies"
+        skills={kneeBraceSkillsData}
+      />
+
+      {/* ===== Back ===== */}
+      <section id="back" className="flex justify-center">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 rounded-full border border-gray-300 px-6 py-2 text-sm font-medium
+                     text-gray-800 transition hover:bg-gray-100
+                     dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800"
+        >
+          ← Back to main page
+        </Link>
+      </section>
+
     </div>
   );
 }

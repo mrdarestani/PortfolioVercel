@@ -60,7 +60,7 @@ export default function AdHocNetworkPage() {
       
       {/* Skills Section */}
       <ProjectSkills
-        title="Ad-Hoc Network – Skills & Technologies"
+        title="Ad-Hoc Network - Skills & Technologies"
         skills={adHocSkillsData}
       />
 

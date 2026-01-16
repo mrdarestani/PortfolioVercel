@@ -14,6 +14,7 @@ import WiFiControllerImg from "@/public/WiFiController.jpg";
 import SmartStentImg from "@/public/SmartStent.jpg";
 import MP3PlayerImg from "@/public/MP3Player.jpg";
 import AdHocImg from "@/public/AdHoc.jpg";
+import SmartGridImg from "@/public/SmartGrid.jpg";
 
 
 export const links = [
@@ -77,7 +78,7 @@ export const experiencesData = [
     date: "2018 - 2024",
   },
   {
-    title: "Hardware Lead – Hardware/Firmware Developer @ Texavie",
+    title: "Hardware Lead - Hardware/Firmware Developer @ Texavie",
     location: "Vancouver, Canada",
     description:
       "At Texavie, I led the hardware and firmware development of smart wearables, including a glove and knee brace. I designed PCBs, wrote embedded firmware for Bluetooth-enabled microcontrollers, and ensured regulatory compliance.",
@@ -85,28 +86,36 @@ export const experiencesData = [
     date: "2020 - 2023",
   },
   {
-    title: "System Engineer – Hardware/Firmware Developer @ Fluttercare",
+    title: "System Engineer - Hardware/Firmware Developer @ Fluttercare",
     location: "Vancouver, Canada",
     description:
       "At Fluttercare, I lead the design of a smart wearable for infant health monitoring. I develop embedded firmware and custom PCBs, manage the hardware team, and ensure product compliance and performance.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - Now",
+    date: "2023 - 2025",
   },
   {
     title: "Faculty Lecturer @ BCIT",
     location: "Vancouver, Canada",
     description:
-      "I teach electronics and digital circuit courses to Biomedical Engineering Technology students at BCIT. My role includes guiding students through hands-on labs, ensuring lab safety, and contributing to course development.",
+      "I was an instructor for electronics and digital circuit courses in Biomedical Engineering Technology department at BCIT. My role was included guiding students through hands-on labs, ensuring lab safety, and contributing to course development.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024 - Now",
+    date: "2024 - 2025",
   },
   {
-    title: "Hardware/Firmware Engineer",
+    title: "Senior Firmware Engineer @ Corinex",
+    location: "Vancouver, Canada",
+    description:
+      "At Corinex, I worked on firmware and simulation platforms for smart grid and EV charging systems, enabling reliable communication between energy devices and central management systems using industry-standard power line and networking technologies.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2025 - Now",
+  },
+  {
+    title: "Hardware/Firmware Engineer @ Freelance",
     location: "Vancouver, Canada",
     description:
       "I'm currently working as a hardware/firmware engineer focused on embedded systems, smart wearables, and wireless medical devices. I design PCBs, write embedded firmware (C/C++), and lead product development across multiple stages. I'm open to impactful opportunities in health tech and embedded innovation.",
     icon: React.createElement(FaReact),
-    date: "2025",
+    date: "2025 - Now",
   },
 ] as const;
 
@@ -117,6 +126,7 @@ export const projectsData = [
       "Developed a non-invasive wearable for monitoring fetal movements, offering objective, real-time insights for prenatal care. Uses abdominal sensors to track frequency and intensity of fetal kicks, enhancing maternal bonding and clinical decision-making.",
     tags: ["Embedded Systems", "Wearables", "Sensors", "Healthcare", "STM32"],
     imageUrl: FlutterImg,
+    slug: "bellyband-kick-counter",// <-- ADD THIS
   },
   {
     title: "KneeBrace",
@@ -124,6 +134,7 @@ export const projectsData = [
       "Designed a wearable knee brace integrating IMU and strain sensors for lower body pose estimation. Leveraged machine learning with motion capture data for 3D human modeling, enabling advanced motion tracking for healthcare and fitness applications.",
     tags: ["Machine Learning", "Wearables", "IMU", "Human Pose Estimation"],
     imageUrl: TexavieKneeImg,
+    slug: "kneebrace",// <-- ADD THIS
   },
   {
     title: "SmartGlove",
@@ -131,6 +142,7 @@ export const projectsData = [
       "Engineered a stretchable, washable glove with helical sensor yarns and IMUs for precise hand tracking. Enabled real-time, wireless monitoring for applications in HCI, VR/AR, robotics, and rehabilitation.",
     tags: ["Wearables", "Sensors", "Embedded Systems", "IMU", "Healthcare"],
     imageUrl: TexavieGloveImg,
+    slug: "smartglove",// <-- ADD THIS
   },
   {
     title: "Smart Ureteral Stent",
@@ -138,6 +150,7 @@ export const projectsData = [
       "Developed a wireless pressure-sensing ureteral stent with an RF antenna and micro pressure sensor. Enabled early detection of hydronephrosis through resonance frequency shifts, validated in in-vitro and ex-vivo models.",
     tags: ["Biomedical", "RF Sensing", "Wireless", "Microfabrication", "Medical Device"],
     imageUrl: SmartStentImg,
+    slug: "smart-ureteral-stent",// <-- ADD THIS
   },
   {
     title: "LipLoft",
@@ -145,6 +158,7 @@ export const projectsData = [
       "Created an assistive device enabling quadriplegic individuals to control drones using head motion and breath. Designed for 6 DOF drone control via Bluetooth using LipSync technology.",
     tags: ["Assistive Tech", "Embedded Systems", "Bluetooth", "Accessibility"],
     imageUrl: LipLoftImg,
+    slug: "liploft",// <-- ADD THIS
   },
   {
     title: "Infant Incubator",
@@ -152,6 +166,7 @@ export const projectsData = [
       "Built a smart infant incubator with STM32F103 and LPC1788 for monitoring and regulating skin temperature and humidity. Featured alarms for faults and environmental anomalies, enhancing neonatal care.",
     tags: ["STM32", "Embedded Systems", "Medical Devices", "Sensors"],
     imageUrl: InFantIncubatorImg,
+    slug: "infant-incubator",// <-- ADD THIS
   },
   {
     title: "MP3 Player",
@@ -159,6 +174,7 @@ export const projectsData = [
       "Designed a standalone MP3 player using STM32F103. Handled decompression and stereo DAC output without external ICs, enabling low-cost audio playback from MMC via SPI.",
     tags: ["STM32", "Audio", "SPI", "Embedded Systems", "MP3"],
     imageUrl: MP3PlayerImg,
+    slug: "mp3-player",// <-- ADD THIS
   },
   {
     title: "Ad-HOC Network",
@@ -166,6 +182,7 @@ export const projectsData = [
       "Built a decentralized wireless ad hoc network with 10 nodes using TDMA and FDMA for secure, full-duplex data/voice transmission. Implemented dynamic routing, CODEC compression, and fast frequency hopping.",
     tags: ["Wireless", "TDMA", "FDMA", "Network Security", "Embedded Systems"],
     imageUrl: AdHocImg,
+    slug: "ad-hoc-network",// <-- ADD THIS
   },
   {
     title: "WiFi Controller (IoT)",
@@ -173,6 +190,15 @@ export const projectsData = [
       "Developed a secure WiFi-based controller for home automation. Enabled multi-node device control via Android app with timer, learning, and scheduling features.",
     tags: ["IoT", "WiFi", "Android App", "Home Automation"],
     imageUrl: WiFiControllerImg,
+    slug: "wifi-controller",// <-- ADD THIS
+  },
+  {
+  title: "Smart Grid & EV Charging",
+  description:
+    "Developed firmware and simulation tools for smart grid and EV charging systems, enabling seamless communication between EV chargers and central servers.",
+  tags: ["Smart Grid", "EV Charging", "PLC", "Embedded Systems", "Energy Management","BPL"],
+  imageUrl: SmartGridImg, // <-- replace with your image import
+  slug: "smart-grid-ev-charging", // <-- ADD THIS
   },
 ] as const;
 
@@ -182,6 +208,7 @@ export const skillsData = [
   "MATLAB",
   "C#",
   "ARM Cortex-M",
+  "Linux",
   "VHDL",
   "Assembly",
   "KiCad",

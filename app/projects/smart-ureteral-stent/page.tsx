@@ -113,6 +113,16 @@ export default function SmartUreteralStentPage() {
             
           </a>
         </div>
+
+        <video
+          src="/projects/TransducerWinner.mp4"
+          controls
+          className="w-full rounded-2xl shadow-xl"
+        />
+        <p className="text-sb text-center text-gray-500">
+          Winner Award Ceremony — Kyoto, Japan (JUNE,2023)
+        </p>
+
       </section>
 
       {/* ===== Graduation ===== */}

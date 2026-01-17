@@ -34,6 +34,20 @@
 - Sometimes, Vercel might cache some old builds. If you run into this issue, you can force a fresh deploy by clearing the Vercel cache:
 - vercel --prod --force
 
+continious deployment on vercel
+- rm -rf node_modules
+- rm -f package-lock.json
+- npm install
+- npm run build
+## Commit & push (IMPORTANT)
+- git status
+- git add .
+- git commit -m "Fix build errors and finalize project pages"
+- git push origin main
+## Run exact Vercel build locally (optional but powerful)
+- npm i -g vercel
+- vercel pull
+- vercel build
 
 ## What you will learn
 

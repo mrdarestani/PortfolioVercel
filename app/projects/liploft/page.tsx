@@ -80,7 +80,7 @@ export default function LipLoftPage() {
       <section id="image-3" className="scroll-mt-28">
         <div className="rounded-2xl overflow-hidden shadow-xl">
           <img
-            src="/projects/Liploft3.JPEG"
+            src="/projects/Liploft3.jpeg"
             alt="Assistive drone control using puff-and-sip interface"
             className="w-full h-auto object-cover"
           />

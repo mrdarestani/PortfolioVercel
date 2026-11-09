@@ -10,6 +10,31 @@ import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    setIsSubmitting(true);
+
+    try {
+      const { data, error } = await sendEmail(new FormData(form));
+
+      if (error) {
+        toast.error(error);
+        return;
+      }
+
+      if (data) {
+        toast.success("Email sent successfully!");
+        form.reset();
+      }
+    } catch {
+      toast.error("Unable to send your message. Please email me directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <motion.section
@@ -41,16 +66,7 @@ export default function Contact() {
 
       <form
         className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-
-          toast.success("Email sent successfully!");
-        }}
+        onSubmit={handleSubmit}
       >
         <input
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
@@ -67,7 +83,7 @@ export default function Contact() {
           required
           maxLength={5000}
         />
-        <SubmitBtn />
+        <SubmitBtn pending={isSubmitting} />
       </form>
     </motion.section>
   );

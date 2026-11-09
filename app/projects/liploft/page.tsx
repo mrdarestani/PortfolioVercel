@@ -1,7 +1,11 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import ProjectSkills from "@/components/project-skills";
 import { lipLoftSkillsData } from "@/lib/project-skills";
+import lipLoftImage1 from "@/public/projects/Liploft1.jpg";
+import lipLoftImage2 from "@/public/projects/Liploft2.jpg";
+import lipLoftImage3 from "@/public/projects/Liploft3.jpeg";
 
 export default function LipLoftPage() {
   return (
@@ -57,8 +61,8 @@ export default function LipLoftPage() {
       {/* Image 1 */}
       <section id="photos" className="scroll-mt-28">
         <div className="rounded-2xl overflow-hidden shadow-xl">
-          <img
-            src="/projects/Liploft1.jpg"
+          <Image
+            src={lipLoftImage1}
             alt="LipLoft drone control system demonstration"
             className="w-full h-auto object-cover"
           />
@@ -68,8 +72,8 @@ export default function LipLoftPage() {
       {/* Image 2 */}
       <section id="image-2" className="scroll-mt-28">
         <div className="rounded-2xl overflow-hidden shadow-xl">
-          <img
-            src="/projects/Liploft2.jpg"
+          <Image
+            src={lipLoftImage2}
             alt="LipLoft team at the 2019 Health Hackathon"
             className="w-full h-auto object-cover"
           />
@@ -79,8 +83,8 @@ export default function LipLoftPage() {
       {/* Image 3 */}
       <section id="image-3" className="scroll-mt-28">
         <div className="rounded-2xl overflow-hidden shadow-xl">
-          <img
-            src="/projects/Liploft3.jpeg"
+          <Image
+            src={lipLoftImage3}
             alt="Assistive drone control using puff-and-sip interface"
             className="w-full h-auto object-cover"
           />

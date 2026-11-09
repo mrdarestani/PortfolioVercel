@@ -16,7 +16,7 @@ import { adHocSkillsData } from "@/lib/project-skills";
 
 // Import your project images here
 import adHocImg1 from "@/public/projects/ad-hoc-1.jpg";
-import adHocImg2 from "@/public/projects/ad-hoc-2.jpg";
+import adHocImg2 from "@/public/projects/ad-hoc-2.png";
 
 
 export default function AdHocNetworkPage() {

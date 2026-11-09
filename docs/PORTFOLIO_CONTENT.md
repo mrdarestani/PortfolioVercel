@@ -37,12 +37,12 @@ Include projects currently in progress alongside completed projects, with an exp
 
 ## Publications
 
-Show all publications together on a dedicated page, with the homepage giving a short research concept/summary and a link to the full list. Each publication entry should include the complete title, authors, venue and year, and a direct publisher or proceedings link. Avoid relying on paper-cover images as the only way to identify a publication.
+The homepage now gives a short research concept/summary and links to the full list at `/publications`. The citation data is maintained in `lib/publications.ts`; the list UI is in `components/publications.tsx`. Each entry includes title, authors, venue, year, and a direct publisher, proceedings, or indexing link. Avoid relying on paper-cover images as the only way to identify a publication.
 
 1. Nirvana Gharib, Mohammad Reza Yousefi Darestani, and Kenichi Takahata, “A Precessing-Coin-Like Rotary Actuator for Distal Endoscope Scanners: Proof-of-Concept Study,” _Micromachines_, 16(1), 111, 2025. [DOI](https://doi.org/10.3390/mi16010111)
 2. Mohammad Reza Yousefi Darestani, Dirk Lange, Ben H. Chew, and Kenichi Takahata, “Ex-Vivo Testing of Smart Ureteral Stent toward Hydronephrosis Monitoring via Standard Stenting,” _2024 IEEE SENSORS_, Kobe, Japan, 2024, pp. 1–4; accepted for oral presentation. [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10784736)
 3. Mohammad Reza Yousefi Darestani, Dirk Lange, Ben H. Chew, and Kenichi Takahata, “A Sensor-Integrated ‘Smart’ Ureteral Stent and Wireless In-Vitro Test for Real-Time Obstruction Detection,” _22nd International Conference on Solid-State Sensors, Actuators and Microsystems (Transducers)_, 2023. [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10517071)
-4. Mohammad Reza Yousefi Darestani, Dirk Lange, Ben H. Chew, and Kenichi Takahata, “Intelligent Ureteral Stent Placeable via Standard Procedure for Kidney Pressure Telemetry: An Ex-Vivo Study,” _Annals of Biomedical Engineering_, September 2024. **Confirm:** no working publication URL was included in the supplied notes; add the DOI, PubMed, or publisher link before publishing this entry.
+4. Mohammad Reza Yousefi Darestani, Dirk Lange, Ben H. Chew, and Kenichi Takahata, “Intelligent Ureteral Stent Placeable via Standard Procedure for Kidney Pressure Telemetry: An Ex-Vivo Study,” _Annals of Biomedical Engineering_, September 2024. [PubMed](https://pubmed.ncbi.nlm.nih.gov/39316307/)
 5. Mohammad Reza Yousefi Darestani, Dirk Lange, Ben H. Chew, and Kenichi Takahata, “Electromechanically Functionalized Ureteral Stents for Wireless Obstruction Monitoring,” _ACS Biomaterials Science & Engineering_, June 2023. [DOI](https://doi.org/10.1021/acsbiomaterials.3c00114)
 6. Siying Wu, Fatemeh Zabihi, Rou Yi Yeap, Mohammad Reza Yousefi Darestani, Addie Bahi, Zeyu Wan, Shengyuan Yang, Peyman Servati, and Frank K. Ko, “Cesium Lead Halide Perovskite Decorated Polyvinylidene Fluoride Nanofibers for Wearable Piezoelectric Nanogenerator Yarns,” 2023. [DOI](https://doi.org/10.1021/acsnano.2c07320)
 7. Mohammad Reza Yousefi Darestani, Nabil Shalabi, Dirk Lange, Ben H. Chew, and Kenichi Takahata, “MEMS-Enabled Wireless Ureteral Stent with Integrated Antenna for Local Pressure Monitoring,” _21st International Conference on Solid-State Sensors, Actuators and Microsystems (Transducers)_, 2021. [IEEE Xplore](https://ieeexplore.ieee.org/document/9495464)
@@ -82,7 +82,6 @@ Present the Karate experience across three roles: player/practitioner, coach, an
 
 ## Content To Confirm Before Launch
 
-- Add the verified DOI or stable publisher link for the 2024 _Annals of Biomedical Engineering_ paper.
 - Verify the exact Young Researcher award/finalist wording and the official Venture Founders cohort name.
 - Confirm the CV download control points to `/CV.pdf` and not `/CV2025.pdf` when that UI is updated.
 - Create and review non-confidential conceptual diagrams for BPL scenarios, OCPP EV charger control, and EEBUS device control before adding them to the Corinex case study.

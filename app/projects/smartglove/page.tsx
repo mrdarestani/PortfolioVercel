@@ -1,7 +1,10 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import ProjectSkills from "@/components/project-skills";
 import { smartGloveSkillsData } from "@/lib/project-skills";
+import smartGloveImage1 from "@/public/projects/Glove1.jpg";
+import smartGloveImage2 from "@/public/projects/Glove2.jpg";
 
 export default function SmartGlovePage() {
   return (
@@ -39,8 +42,8 @@ export default function SmartGlovePage() {
       {/* Image 1 */}
       <section id="photos" className="scroll-mt-28">
         <div className="rounded-2xl overflow-hidden shadow-xl">
-          <img
-            src="/projects/Glove1.jpg"
+          <Image
+            src={smartGloveImage1}
             alt="Smart Glove wearable prototype"
             className="w-full h-auto object-cover"
           />
@@ -50,8 +53,8 @@ export default function SmartGlovePage() {
       {/* Image 2 */}
       <section id="image-2" className="scroll-mt-28">
         <div className="rounded-2xl overflow-hidden shadow-xl">
-          <img
-            src="/projects/Glove2.jpg"
+          <Image
+            src={smartGloveImage2}
             alt="Smart Glove electronics and sensor layout"
             className="w-full h-auto object-cover"
           />

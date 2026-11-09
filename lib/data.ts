@@ -27,6 +27,10 @@ export const links = [
     hash: "#about",
   },
   {
+    name: "Research",
+    hash: "#research",
+  },
+  {
     name: "Projects",
     hash: "#projects",
   },
@@ -51,7 +55,7 @@ export const experiencesData = [
     description:
       "Completed a 4-year undergraduate program with a strong foundation in electronics, circuit design, and project development. Gained hands-on experience with fundamental measurement tools and instrumentation, and developed the ability to design and implement engineering solutions from concept to prototype.",
     icon: React.createElement(LuGraduationCap),
-    date: "2010 - 2013",
+    date: "2007 - 2010",
   },
   {
     title: "M.Sc, Electrical Engineering",

@@ -131,3 +131,7 @@ export const publicationsData: readonly Publication[] = [
     linkLabel: "IEEE Xplore",
   },
 ];
+
+export const publicationYears = Array.from(
+  new Set(publicationsData.map((publication) => publication.year))
+).sort((a, b) => b - a);

@@ -15,6 +15,7 @@ import SmartStentImg from "@/public/SmartStent.jpg";
 import MP3PlayerImg from "@/public/MP3Player.jpg";
 import AdHocImg from "@/public/AdHoc.jpg";
 import SmartGridImg from "@/public/SmartGrid.jpg";
+import TotalProjectsMiniImg from "@/public/projects/miscellaneous/TotalProjectsMini.jpg";
 
 
 export const links = [
@@ -203,6 +204,14 @@ export const projectsData = [
   tags: ["Smart Grid", "EV Charging", "PLC", "Embedded Systems", "Energy Management","BPL"],
   imageUrl: SmartGridImg, // <-- replace with your image import
   slug: "smart-grid-ev-charging", // <-- ADD THIS
+  },
+  {
+    title: "Miscellaneous Learning Projects",
+    description:
+      "A hands-on collection of embedded systems, electronics, sensing, and interface projects, with project photos, design notes, and practical learning outcomes together in one place.",
+    tags: ["Learning", "Embedded Systems", "Electronics", "Prototyping"],
+    imageUrl: TotalProjectsMiniImg,
+    slug: "miscellaneous",
   },
 ] as const;
 

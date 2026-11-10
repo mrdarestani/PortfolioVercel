@@ -12,7 +12,7 @@ export default function Publications() {
     <section
       id="research"
       ref={ref}
-      className="mb-28 w-[min(100%,48rem)] scroll-mt-28"
+      className="mb-28 w-[min(100%,52rem)] scroll-mt-28 rounded-3xl border border-gray-200/80 bg-white/70 px-6 py-8 shadow-sm shadow-gray-950/[0.04] dark:border-white/15 dark:bg-white/[0.035] dark:shadow-black/10 sm:px-10 sm:py-10"
     >
       <SectionHeading>Research &amp; publications</SectionHeading>
       <p className="text-center leading-relaxed text-gray-700 dark:text-white/75">
